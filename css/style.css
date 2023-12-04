@@ -1,4 +1,89 @@
 #hero {
-background-image: url("../images/hero.jpg");
+    background-image: url("../images/hero.jpg");
 
 }
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    /* Allow cards to wrap to the next row */
+    justify-content: space-between;
+    /* Space between cards */
+    gap: 10px;
+    /* Adjust the gap between cards as needed */
+}
+
+.card {
+    flex: 1;
+    /* Distribute available space equally between cards */
+
+    border: 1px solid #ccc;
+    /*border style */
+    padding: 10px;
+    /*padding */
+    width: calc(50% - 5px);
+    /* Calculate card width for two cards per row */
+    /*  */
+}
+
+/* Footer links */
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    /* Arrange contact details in a row */
+    justify-content: center;
+    /* Center the content horizontally */
+    align-items: center;
+    /* Center the content vertically */
+    text-align: center;
+    /* Center the text within each list item */
+}
+
+#social-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    /* Arrange list items in a row */
+    gap: 10px;
+    /* Adjust the gap between list items */
+}
+
+#social-links li {
+    display: flex;
+    /* Arrange text and hr in a row */
+    align-items: center;
+    /* Center content vertically within each list item */
+}
+
+#social-links li hr {
+    flex: 1;
+    /* Distribute available space evenly between text and hr */
+    margin: 0 10px;
+    /* Add spacing between text and hr */
+    border: none;
+    /*  border styling */
+    border-top: 1px solid #ccc;
+    /* Add a horizontal line */
+}
+
+#social-links a {
+    text-decoration: none;
+    color: #333;
+    /* Set link color */
+}
+
+#social-links a:hover {
+    text-decoration: underline;
+    /* Add underline on hover */
+}
+
+footer {
+    text-align: center; /* Center-align  the footer */
+  }
+  
+  /* Additional styling for the footer*/
+  footer p {
+    margin: 10px 0; /* margin */
+    font-size: 14px; /*  font size */
+  }
