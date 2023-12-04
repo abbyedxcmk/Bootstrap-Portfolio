@@ -1,99 +1,164 @@
-#hero {
-    background-image: url("../images/hero.jpg");
-
+.navbar {
+    background-image: url("../images/navimage.jpg"); /* Path to your image */
+    background-size: cover; /* Cover the entire navbar area */
+    background-position: center; /* Center the image in the navbar */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
 }
 
+
+
+/* Hero Banner Section Enhancements */
+#about .jumbotron {
+    background-color: rgba(0, 0, 0, 0.5); /* Adding a darker overlay for contrast */
+    color: rgb(255, 255, 255); /* White text */
+    padding: 40px; /* Adequate padding */
+}
+
+#about .jumbotron h1 {
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Text shadow for headline */
+    font-size: 2.5rem; /* Larger font size for headline */
+    font-weight: bold; /* Bold font weight */
+}
+
+#about .jumbotron p {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Text shadow for paragraph */
+    font-size: 1.2rem; /* Adjusted font size for paragraph */
+    line-height: 1.5; /* Adequate line height */
+}
+
+/* Responsive Design for Hero Banner Text */
+@media (max-width: 768px) {
+    #about .jumbotron h1 {
+        font-size: 2rem; /* Smaller font size for mobile devices */
+    }
+
+    #about .jumbotron p {
+        font-size: 1rem; /* Smaller font size for paragraphs on mobile devices */
+    }
+}
+
+
+
+/* Hero Section */
+#hero {
+    background-image: url("../images/hero.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin-top: 20px; /* Adjust the value as needed */
+    color: #fff; /* White text */
+}
+
+#hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5); /* Black overlay */
+}
+
+#hero-text {
+    position: relative;
+    z-index: 1;
+    color: rgba(241, 245, 236, 0.886); /* White text */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Black shadow for contrast */
+    font-size: 24px; /* Larger font size */
+    font-weight: bold; /* Bold font weight */
+    font-family: 'Arial', 'Helvetica Neue', sans-serif;
+    letter-spacing: 1px; /* Spacing between letters */
+    line-height: 1.4; /* Line height */
+}
+
+/* Container and Cards */
 .container {
     display: flex;
     flex-wrap: wrap;
-    /* Allow cards to wrap to the next row */
     justify-content: space-between;
-    /* Space between cards */
     gap: 10px;
-    /* Adjust the gap between cards as needed */
 }
 
 .card {
     flex: 1;
-    /* Distribute available space equally between cards */
-
     border: 1px solid #ccc;
-    /*border style */
     padding: 10px;
-    /*padding */
     width: calc(50% - 5px);
-    /* Calculate card width for two cards per row */
-    /*  */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Footer links */
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
 
+/* Footer Links */
 .contact {
     display: flex;
     flex-direction: row;
-    /* Arrange contact details in a row */
     justify-content: center;
-    /* Center the content horizontally */
     align-items: center;
-    /* Center the content vertically */
     text-align: center;
-    /* Center the text within each list item */
 }
 
 #social-links {
     list-style: none;
     padding: 0;
     display: flex;
-    /* Arrange list items in a row */
     gap: 10px;
-    /* Adjust the gap between list items */
 }
 
 #social-links li {
     display: flex;
-    /* Arrange text and hr in a row */
     align-items: center;
-    /* Center content vertically within each list item */
 }
 
 #social-links li hr {
     flex: 1;
-    /* Distribute available space evenly between text and hr */
     margin: 0 10px;
-    /* Add spacing between text and hr */
     border: none;
-    /*  border styling */
     border-top: 1px solid #ccc;
-    /* Add a horizontal line */
 }
 
 #social-links a {
     text-decoration: none;
     color: #333;
-    /* Set link color */
 }
 
 #social-links a:hover {
     text-decoration: underline;
-    /* Add underline on hover */
 }
 
+/* Footer */
 footer {
-    text-align: center; /* Center-align  the footer */
-  }
-  
-  /* Additional styling for the footer*/
-  footer p {
-    margin: 10px 0; /* margin */
-    font-size: 14px; /*  font size */
-  }
+    text-align: center;
+    background-color: #f8f8f8;
+    color: #333;
+    padding: 20px 0;
+}
 
- /* Add these styles to your external CSS file */
+footer p {
+    margin: 10px 0;
+    font-size: 14px;
+}
 
-/* Skills Section */
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
 
-/* Add these styles to your external CSS file */
+a {
+    color: #0066cc;
+}
 
-/* Skills Section */
+/* Responsive Design */
+@media (max-width: 768px) {
+    .card {
+        width: 100%;
+    }
 
-
+    .contact, #social-links {
+        flex-direction: column;
+    }
+}
