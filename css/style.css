@@ -107,6 +107,23 @@
     text-align: center;
 }
 
+#skills {
+    margin: 0 auto;
+    width: 90%;
+}
+#skills ol{
+    display: flex;
+    justify-content: center;
+}
+
+#skills li {
+    justify-content: center;
+}
+
+.carousel-inner {
+    margin: 0 auto;
+}
+
 #social-links {
     list-style: none;
     padding: 0;
