@@ -9,19 +9,19 @@
 
 /* Hero Banner Section Enhancements */
 #about .jumbotron {
-    background-color: rgba(0, 0, 0, 0.5); /* Adding a darker overlay for contrast */
+    background-color: rgba(0, 0, 0, 0.9); /* Adding a darker overlay for contrast */
     color: rgb(255, 255, 255); /* White text */
     padding: 40px; /* Adequate padding */
 }
 
 #about .jumbotron h1 {
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Text shadow for headline */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9); /* Text shadow for headline */
     font-size: 2.5rem; /* Larger font size for headline */
     font-weight: bold; /* Bold font weight */
 }
 
 #about .jumbotron p {
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Text shadow for paragraph */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9); /* Text shadow for paragraph */
     font-size: 1.2rem; /* Adjusted font size for paragraph */
     line-height: 1.5; /* Adequate line height */
 }
@@ -56,7 +56,7 @@
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba(0, 0, 0, 0.5); /* Black overlay */
+    background: rgba(0, 0, 0, 0.1); /* Black overlay */
 }
 
 #hero-text {
@@ -162,7 +162,7 @@ footer {
 
 footer p {
     margin: 10px 0;
-    font-size: 14px;
+    font-size: 1.2rem;
 }
 
 /* General Styling */
